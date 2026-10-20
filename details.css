@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background: #14161c;
+    color: #f5f5f5;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.brand {
+    color: #a5a8b5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #20232c;
+    border: 1px solid #333743;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0 0 14px;
+    overflow-wrap: anywhere;
+}
+
+.rating {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #303b32;
+    color: #a5e6ad;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Yellow: rating from 40% to 69% */
+.rating.rating-medium {
+    background: #4a421f;
+    color: #ffe08a;
+}
+
+/* Orange: rating below 40% */
+.rating.rating-low {
+    background: #4a2f20;
+    color: #ffb078;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.poster-container {
+    min-height: 280px;
+    background: #181a21;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.poster {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+}
+
+.poster[hidden],
+.placeholder[hidden] {
+    display: none;
+}
+
+.placeholder {
+    padding: 20px;
+    text-align: center;
+    color: #a5a8b5;
+}
+
+.section-label {
+    color: #a5a8b5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin: 4px 0 20px;
+}
+
+.detail-row {
+    margin-bottom: 18px;
+}
+
+.detail-label {
+    display: block;
+    color: #a5a8b5;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.detail-value {
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.description-value {
+    white-space: pre-line;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.open-button {
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    padding: 13px 12px;
+    border: none;
+    border-radius: 9px;
+    background: #e8e8ed;
+    color: #171820;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.open-button:hover {
+    background: #ffffff;
+}
+
+.error {
+    color: #ff9c9c;
+    line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .poster-container {
+        max-width: 280px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}

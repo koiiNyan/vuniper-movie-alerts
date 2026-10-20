@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Details — Vuniper</title>
+
+    <link rel="stylesheet" href="details.css">   
+</head>
+
+<body>
+    <main class="container">
+        <div class="brand">VUNIPER MOVIE ALERTS</div>
+
+        <section class="card">
+            <header class="header">
+                <h1 id="movieTitle">Loading movie...</h1>
+                <span class="rating" id="movieRating">Rating: —</span>
+            </header>
+
+            <div class="content">
+                <div class="poster-container">
+                    <img
+                        id="moviePoster"
+                        class="poster"
+                        alt="Movie poster"
+                        hidden
+                    >
+
+                    <div id="posterPlaceholder" class="placeholder">
+                        Loading poster...
+                    </div>
+                </div>
+
+                <section>
+                <div class="section-label">MOVIE DETAILS</div>
+
+                <div class="detail-row" id="yearRow" hidden>
+                    <span class="detail-label">Release year</span>
+                    <span class="detail-value" id="movieYear"></span>
+                </div>
+
+                <div class="detail-row" id="genresRow" hidden>
+                    <span class="detail-label">Genres</span>
+                    <span class="detail-value" id="movieGenres"></span>
+                </div>
+
+                <div class="detail-row" id="runtimeRow" hidden>
+                    <span class="detail-label">Runtime</span>
+                    <span class="detail-value" id="movieRuntime"></span>
+                </div>
+
+                <div class="detail-row" id="descriptionRow" hidden>
+                    <span class="detail-label">Description</span>
+                    <p class="detail-value description-value" id="movieDescription"></p>
+                </div>
+
+                <button class="open-button" id="openVuniper">
+                    Open on Vuniper ↗
+                </button>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script src="details.js"></script>
+</body>
+</html>
