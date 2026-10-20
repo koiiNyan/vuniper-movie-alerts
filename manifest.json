@@ -15,12 +15,16 @@
     "background": {
     "service_worker": "background.js"
     },
-    "content_scripts": [
+"content_scripts": [
         {
             "matches": ["https://vuniper.com/movies/*"],
             "js": ["content.js"]
+        },
+        {
+            "matches": ["https://vuniper.com/movies/*"],
+            "js": ["detail-scraper.js"],
+            "run_at": "document_idle"
         }
-
     ],
     "action": {
     "default_title": "Vuniper Movie Alerts",
