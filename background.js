@@ -111,8 +111,8 @@ const SCAN_RETRY_ALARM = "vuniper-background-scan-retry";
 
 const ACTIVE_SCAN_KEY = "vuniperActiveScan";
 
-// Check every 30 minutes to reduce unnecessary site traffic.
-const SCAN_INTERVAL_MINUTES = 30;
+// Check every 60 minutes to reduce unnecessary site traffic.
+const SCAN_INTERVAL_MINUTES = 60;
 
 let scanLaunchInProgress = false;
 
